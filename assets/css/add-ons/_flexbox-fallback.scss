@@ -1,0 +1,40 @@
+.no-flexbox {
+	.flex-container {
+		display: block;
+		> a,
+		> address,
+		> article,
+		> aside,
+		> blockquote,
+		> button,
+		> dd,
+		> div,
+		> dl,
+		> dt,
+		> figcaption,
+		> figure,
+		> footer,
+		> form,
+		> header,
+		> h1,
+		> h2,
+		> h3,
+		> h4,
+		> h5,
+		> h6,
+		> hr,
+		> input,
+		> li,
+		> main,
+		> nav,
+		> ol,
+		> p,
+		> pre,
+		> section,
+		> span,
+		> ul {
+			float: left;
+			width: auto;
+		}
+	}
+}

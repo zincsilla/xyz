@@ -1,0 +1,227 @@
+.breadcrumb {
+	font-size: 12px;
+	padding: 10px 0;
+	color: $macy-grey;
+	}
+
+	.breadcrumb a {
+		color: $jack-black;
+		}
+
+	.breadcrumb a:hover {
+		text-decoration: none;
+		color: $bright-blue;
+		}
+
+.amq-product-gallery {
+	@include respond-to-max($phablet-max) {
+		max-width: 60%;
+		margin: auto;
+		}
+	@include respond-to-max($mobile-portrait-max) {
+		max-width: 70%;
+		margin: auto;
+		}
+}
+
+.amq-product-gallery figure {
+	border: 1px solid $light-grey;
+	padding: 12px;
+	text-align: center;
+	margin-bottom: 12px;
+	position: relative;
+	}
+
+	.amq-product-gallery figure img {
+		text-align: center;
+		display: block;
+		margin: auto;
+		}
+
+	.amq-product-gallery figure label {
+		position: absolute;
+		background-color: #c50e78;
+		color: #FFF;
+		padding: 8px 14px;
+		top: 20px;
+		right: -7px;
+		font-size: 12px;
+		line-height: 100%;
+		letter-spacing: normal;
+  		word-spacing: normal;
+		}
+
+.amq-product-gallery ul li {
+	border: 1px solid $light-grey;
+	margin: 0 8px 6px 0;
+	text-align: center;
+	padding: 10px;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+	}
+
+	.amq-product-gallery ul li:hover {
+		border: 1px solid $bright-blue;
+		}
+	.amq-product-gallery ul li img {
+		width: 100%;
+		text-align: center;
+		display: block;
+		margin: auto;
+		}
+
+.amq-product-main {
+
+	}
+
+.amq-product-main h1 {
+	font-size: 30px;
+	font-weight: bold;
+	padding-bottom: 12px;
+	@include respond-to-max($mobile-portrait-max) {
+		font-size: 20px;
+		padding: 12px 0 6px 0;
+		}
+	}
+
+.amq-product-main .meta {
+	font-size: 12px;
+	color: $macy-grey;
+	padding-bottom: 12px;
+	}
+
+.amq-product-main .availability {
+	padding-bottom: 12px;
+	font-weight: bold;
+	}
+
+	.amq-product-main .availability--yes { color: $dark-green;}
+	.amq-product-main .availability--no { color: $bright-maroon;}
+
+.amq-product-main .description {
+	padding-bottom: 12px;
+	line-height: 150%;
+	}
+
+.amq-product-main .price-container {
+	padding: 10px;
+	margin-bottom: 12px;
+	}
+
+	.amq-product-main .price-container a {
+		display: block;
+		text-align: center;
+		}
+
+		.amq-product-main .price-container a:hover {
+			color: #FFF;
+			}
+
+.amq-product-main .price {
+	padding: 6px 0;
+	}
+	.amq-product-main .price s {
+		color: $dark-grey;
+		font-size: 13px;
+		padding-bottom: 3px;
+		}
+
+	.amq-product-main .price strong {
+		color: #c50e78;
+		font-size: 18px;
+		}
+
+	.amq-product-main .price span {
+		color: #29a023;
+		font-weight: bold;
+		font-size: 18px;
+		}
+ 
+.amq-product-main .fb-like {
+	margin-bottom: 12px;
+	display: block;
+	}
+
+
+.amq-product-help {
+	padding: 12px;
+	}
+
+	.amq-product-help>ul>li {
+		padding-left: 20px;
+		position: relative;
+		padding-bottom: 6px;
+	}
+
+	.amq-product-help .usp:after {
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		content: "\ea10";
+		position: absolute;
+		top: 4px;
+		left: 0;
+		}
+
+	.amq-product-help .question:after {
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		content: "\ea09";
+		position: absolute;
+		top: 4px;
+		left: 0;
+		}
+
+
+	.amq-product-help .md-content ol {
+		padding-left: 20px;
+		}
+	.amq-product-help .md-content ol li {
+		list-style-type: decimal;
+		padding-bottom: 12px;
+		}
+
+	.amq-product-help .md-content h4 {
+		font-weight: bold;
+		font-size: 16px;
+		color: $dark-maroon;
+		}
+
+
+.amq-product-description p {
+	padding-bottom: 12px;
+	line-height: 140%;
+	}
+
+
+.amq-product-reviews ul li {
+	border-bottom: 1px solid $light-grey;
+	padding: 12px 0;
+	}
+
+	.amq-product-reviews ul li small {
+		color: $macy-grey;
+		}
+
+	.amq-product-reviews .review-text {
+		padding-top: 12px;
+		}
+
+.amq-product-details table {
+	font-size: 14px;
+	}
+
+	.amq-product-details table th {
+		white-space: nowrap;
+		padding-right: 20px;
+		vertical-align: top;
+		}

@@ -1,0 +1,41 @@
+{% block content %}
+
+	<div class="amq_structure_inner">
+
+		<div class="grid">
+			<section class="grid__item one-whole mobile--hide smart--hide">
+			
+				<nav class="breadcrumb">
+					<a href="#">főoldal</a> / <a href="#">magazin</a> / <a href="#">tartas, gondozas</a>
+				</nav>
+
+			</section>
+
+			<article class="grid__item three-quarters tablet--one-whole phablet--one-whole smart--one-whole mobile--one-whole">
+			
+				<div class="amq_article">
+
+					{% include "article/share" %}
+
+					{% include "article/article" %}
+
+					{% include "article/share" %}
+
+				</div>
+
+			</article>
+
+			{% include "article/sidebar" %}
+
+			{% include "article/comments" %}
+
+			{% include "article/readittoo" %}
+
+			{% include "product/related" %}
+
+
+		</div>
+	</div>
+
+{% endblock %}
+

@@ -1,0 +1,318 @@
+.amq_article_meta {
+	padding: 8px;
+	color: $medium-grey-text;
+	}
+
+	.amq_article_meta .date {
+		line-height: 200%;
+		padding-bottom: 0;
+		font-size: 80%;
+		}
+
+	.amq_article_meta .fb_iframe_widget {
+		top: -4px;
+		}
+
+h1.amq_article_title {
+	font-size: 36px;
+	font-weight: bold;
+	padding: 12px 0;
+	@include respond-to-max($phablet-max) {
+		font-size: 160%;
+		line-height: 120%;
+		};
+	@include respond-to-max($mobile-landscape-max) {
+		font-size: 150%;
+		line-height: 120%;
+		};
+	}
+
+.amq_article .summary {
+	font-size: 140%;
+	}
+
+.amq_article p,
+.amq_article ul,
+.amq_article ol,
+.amq_article blockquote,
+.amq_article figure {
+	padding-bottom: 20px;
+	}
+
+.amq_article p {
+	line-height: 160%;
+	@include respond-to-max($phablet-max) {
+		font-size: 16px;
+		};
+	}
+
+.amq_article ul,
+.amq_article ol {
+	padding-left: 24px;
+	@include respond-to-max($phablet-max) {
+		font-size: 16px;
+		};
+	}
+
+.amq_article ul li {
+	list-style-type: disc;
+	padding-bottom: 3px;
+	}
+	.amq_article ul li ul {
+		padding-bottom: 5px;
+		}
+
+		.amq_article ul li ul,
+		.amq_article ul li ol,
+		.amq_article ol li ul,
+		.amq_article ol li ol {
+			padding-top: 10px;
+		} 
+
+.amq_article ol li {
+	list-style-type: decimal;
+	}
+
+.amq_article ul.amq_product_grid {
+	padding: 0;
+}
+
+.amq_article figure.amq_article_hero { 
+	position: relative;
+	z-index: 1;
+	}
+
+	.amq_article figure.amq_article_hero figcaption {
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		background: #FFF;
+		width: 90%;
+		padding: 12px 12px 0 0;
+		@include respond-to-max($phablet-max) {
+	    	position: static;
+	    	padding-left: 0;
+	    	padding-right: 0;
+			};
+		@include respond-to-max($phablet-max) {
+			width: 100%;
+	    	padding-bottom: 0;
+			};
+		}
+
+		.amq_article figure.amq_article_hero figcaption h1.amq_article_title {
+			font-size: 30px;
+			@include respond-to-max($tablet-max) {
+		    	font-size: 24px;
+				};
+			}
+
+		.amq_article figure.amq_article_hero figcaption .summary {
+			font-size: 130%;
+			@include respond-to-max($tablet-max) {
+//		    	font-size: 110%;
+				};
+			@include respond-to-max($phablet-max) {
+		    	font-size: 110%;
+		       	line-height: 140%;
+		       	font-weight: bold;
+		       	padding: 0;
+				};
+			@include respond-to-max($mobile-landscape-max) {
+		       	font-size: 120%;
+		       	line-height: 130%;
+		       	font-weight: bold;
+		       	padding: 0;
+				};
+			}
+
+.amq-article-injected {
+	padding: 0 12px 12px 12px;
+	margin-bottom: 20px;
+	}
+
+	.amq-article-injected .amq_product_grid li a {
+		background: #FFF;
+		}
+
+	.amq-article-injected figure img {
+		display: block;
+		margin: auto;
+		}
+
+.amq_article h2 {
+	color: $dark-grey;
+	font-size: 22px;
+	margin: 0;
+	padding: 14px 0 24px 0;
+	font-weight: bold;
+	position: relative;
+	@include respond-to-max($mobile-portrait-max) {
+       	background: none !important;
+       	padding: 10px 0;
+       	font-size: 16px;
+		};
+	@include respond-to-max($mobile-portrait-max) {
+       	padding: 20px 0;
+       	font-size: 140%;
+		};
+	};
+
+	.amq_article h2:after { 
+		content: '';
+		display: inline-block;
+		bottom: 13px;
+		height: 3px;
+		left: 0;
+		position: absolute;
+		width: 60px;
+		color: red;
+		background-color: $bright-maroon;
+		}
+
+.amq_article h3 {
+	color: $dark-grey;
+	font-size: 20px;
+	margin: 0;
+	padding: 14px 0 14px 0;
+	font-weight: bold;
+	position: relative;
+	@include respond-to-max($mobile-portrait-max) {
+       	background: none !important;
+       	padding: 10px 0;
+       	font-size: 16px;
+		};
+	@include respond-to-max($mobile-landscape-max) {
+       	font-size: 18px;
+		};
+	};
+
+.amq_article blockquote {
+	border-left: 2px solid $light-grey;
+	padding: 12px 12px 12px 24px;
+	margin-bottom: 20px;
+	line-height: 160%;
+	@include respond-to-max($phablet-max) {
+		font-size: 16px;
+		};
+}
+
+
+.amq-article-readitto li {
+	border-bottom: 1px solid $light-grey;
+	
+	}
+
+	.amq-article-readitto li a {
+		display: block;
+		padding: 10px;
+		}
+
+		.amq-article-readitto li a:hover {
+			background-color: $light-grey;
+			text-decoration: none;
+			}
+
+	.amq-article-readitto li img {
+		float: left;
+		margin-right: 16px;
+		}
+
+	.amq-article-readitto li a h3 {
+		font-size: 18px;
+		color: $dark-grey;
+		padding: 5px 0;
+		}
+	.amq-article-readitto li a p {
+		font-size: 14px;
+		color: $medium-grey-text;
+		}
+
+
+.amq-article-sidebar h3 {
+	color: $dark-grey;
+	text-transform: lowercase;
+	font-size: 20px;
+	margin: 0;
+	padding: 0 0 24px 0;
+	font-weight: bold;
+	position: relative;
+	@include respond-to-max($mobile-portrait-max) {
+       	background: none !important;
+       	padding: 10px 0;
+       	font-size: 16px;
+		};
+	@include respond-to-max($mobile-landscape-max) {
+       	font-size: 18px;
+		};
+	}
+
+	.amq-article-sidebar h3:after { 
+		content: '';
+		display: inline-block;
+		bottom: 13px;
+		height: 3px;
+		left: 0;
+		position: absolute;
+		width: 60px;
+		color: red;
+		background-color: $bright-maroon;
+		}
+
+.amq-article-sidebar ul.product,
+.amq-article-sidebar ul.article {
+	margin-bottom: 24px;
+	}
+
+.amq-article-sidebar ul li {
+	border-bottom: 1px solid $light-grey;
+	}
+
+.amq-article-sidebar ul a {
+	display: block;
+	padding: 10px 0;
+	}
+	.amq-article-sidebar ul a:hover {
+		text-decoration: none;
+		background: $light-grey;
+		}
+
+
+.amq-article-sidebar ul h4 {
+	font-size: 12px;
+	}
+
+.amq-article-sidebar ul .meta {
+	color: $medium-grey-text;
+	font-size: 12px;
+	}
+
+
+.amq-article-sidebar .product-price {
+	padding: 10px 0 0 0;
+	}
+
+	.amq-article-sidebar .product-price s,
+	.amq-article-sidebar .product-price strong,
+	.amq-article-sidebar .product-price span {
+		display: block;
+		text-align: right;
+		}
+
+	.amq-article-sidebar .product-price s {
+		color: #999999;
+		font-size: 13px;
+		padding-bottom: 3px;
+		}
+
+	.amq-article-sidebar .product-price strong {
+		color: #c50e78;
+		font-size: 18px;
+		}
+
+	.amq-article-sidebar .product-price span {
+		color: #29a023;
+		font-weight: bold;
+		font-size: 18px;
+		}
+		

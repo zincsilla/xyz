@@ -1,0 +1,61 @@
+<div class="top_nav lap--hide tablet--hide mobile--hide" id="top_nav">
+	<nav class="amq_structure_inner">
+
+		<ul class="top_nav_firstlevel" id="top_nav_firstlevel">
+			<li>
+				<a class="top_nav-main js-menu-trigger" href="#">Piacter</a>
+
+				<!-- FYI: templates/icludes -->
+				{% block navshop %}
+					{% include "navigation/shop" %}
+				{% endblock %}
+
+			</li>
+			<li>
+				<a class="top_nav-main js-menu-trigger" href="#">Allati Magazin</a>
+
+				<!-- FYI: templates/icludes -->
+				{% block navmagazine %}
+					{% include "navigation/magazine" %}
+				{% endblock %}
+
+			</li>
+			<li>
+				<a class="top_nav-main js-menu-trigger" href="#">Szolgaltatok</a>
+
+				<!-- FYI: templates/icludes -->
+				{% block navservices %}
+					{% include "navigation/services" %}
+				{% endblock %}
+
+			</li>
+			<li>
+				<a class="top_nav-main js-menu-trigger" href="#">Menhely</a>
+
+				<!-- FYI: templates/icludes -->
+				{% block navshelter %}
+					{% include "navigation/shelter" %}
+				{% endblock %}
+
+			</li>
+			<li>
+				<a class="top_nav-main js-menu-trigger" href="#">Allati programok</a>
+
+				<!-- FYI: templates/icludes -->
+				{% block navevents %}
+					{% include "navigation/events" %}
+				{% endblock %}
+
+			</li>
+			<li>
+				<a class="top_nav-main js-menu-trigger" href="#">Szakertoink</a>
+
+				<!-- FYI: templates/icludes -->
+				{% block navexperts %}
+					{% include "navigation/experts" %}
+				{% endblock %}
+
+			</li>
+		</ul>
+	</nav>
+</div>

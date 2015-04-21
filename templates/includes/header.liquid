@@ -1,0 +1,161 @@
+<!-- Pushy Menu -->
+<nav class="pushy pushy-left">
+	<h4>Fomenu</h4>
+    <ul>
+        <li><a href="#">Piacter</a></li>
+        <li><a href="#">Magazin</a></li>
+        <li><a href="#">Szolgaltatok</a></li>
+        <li><a href="#">Menhely</a></li>
+        <li><a href="#">Programok</a></li>
+        <li><a href="#">Szakertok</a></li>
+    </ul>
+
+    <h4>Szemelyes</h4>
+    <ul>
+        <li><a href="#">Kosar</a></li>
+        <li><a href="#">Bejelentkezes</a></li>
+        <li><a href="#">Regisztracio</a></li>
+        <li><a href="#">Kapcsolat</a></li>
+    </ul>
+</nav>
+
+<!-- Site Overlay -->
+<div class="site-overlay"></div>
+
+<header class="amq_structure_head">
+
+	<div class="top_logo_search">
+		<div class="amq_structure_inner">
+			<div class="grid grid--full">
+
+				<div class="grid__item one-third mobile--one-half logo">
+					<a href="#">
+						<img src="assets/img/logo-spacer.png" width="600" height="198">
+					</a>
+				</div>
+
+				<nav class="grid__item touch-menu hidden mobile--one-half mobile--showiblock">
+					<a class="js-menu-btn" href="#">
+						<span class="icon-menu	"></span>
+						MENU
+					</a>
+				</nav>
+
+				<div class="grid__item two-thirds mobile--one-whole">
+					
+					<div class="grid grid--narrow">
+
+						<ul class="grid__item one-whole top_func_ecomm flex-container lap--hide tablet--hide mobile--hide">
+
+							<li><a href="#">ugyfelszolgalat@amarqt.com</a></li>
+							<li class="user-profile">
+								<a data-modal="modal-login" class="md-trigger" href="#">Bejelentkezes / Regisztracio</a>
+							</li>
+							<li class="cart">
+								<a href="#" data-modal="modal-cart" class="md-trigger"><span class="icon-cart"></span> 3 elem - 3 400 Ft</a>
+							</li>
+						</ul>
+
+						<div class="touch-header grid__item flex-container grid grid--full">
+							<form class="grid__item mobile--one-whole search">
+								
+								<span class="icon-search"></span>
+								<input type="text" placeholder="termekek, cikkek keresese" />
+
+							</form>
+
+							<nav class="touch-menu hidden mobile--hide smart--showiblock phablet--showiblock tablet--showiblock">
+								<a class="js-menu-btn" href="#">
+									<span class="icon-menu"></span>
+									MENU
+								</a>
+							</nav>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>
+
+
+
+<!-- hidden modal window content for loggin in -->
+<div class="md-modal md-effect-3 popup-login" id="modal-login">
+	<div class="md-content">
+		<button class="md-close"><span class="icon-cancel-circle"></span></button>
+		<h3>Bejelentkezes / Regisztracio</h3>
+		<div>
+			<p><strong>Kényelmes és egyszerű!</strong><br />
+			Facebook használatával könnyedén egy kattintással beléphet, és nincs szüksége regisztrációra.</p>
+
+			<a class="button facebook" href="#">
+				<span class="icon-facebook"></span>
+				Belépek a Facebookkal
+			</a>
+
+			<div class="popup-login--separator">
+				<label>vagy</label>
+			</div>
+
+			<p>Használhatja meglévő felhasználónevét és jelszavát.</p>
+
+			<form action="/accounts/login/" method="post" id="login_form"><p>
+
+					<input type="text" name="username" value="" id="username" placeholder="Felhasználónév">
+					<input type="password" name="password" value="" id="password" class="text" placeholder="Jelszó">
+					<input type="submit" value="Bejelentkezés" class="button">
+
+					<a href="/accounts/password/reset/">Elfelejtett jelszó</a>
+					
+				</form>
+		</div>
+	</div>
+</div>
+
+
+<!-- hidden modal window content for cart -->
+<div class="md-modal md-effect-3 popup-cart" id="modal-cart">
+	<div class="md-content">
+		<button class="md-close"><span class="icon-cancel-circle"></span></button>
+		<h3>Kosar</h3>
+		<ul>
+			<li class="discount">
+				<img src="http://ecx.images-amazon.com/images/I/41rs2cPGk%2BL._AA160_.jpg" />
+				<label>-30%</label>
+				<div class="popup-cart--product">
+					<h5>Hill's Science Diet Adult Dry Dog Food Bag, 38.5-Pound</h5>
+					<strong>1 x 350 Ft</strong>
+				</div>
+				<span class="icon-cross"></span>
+			</li>
+			<li>
+				<img src="http://ecx.images-amazon.com/images/I/41Z%2BI7XQ%2BtL._AA160_.jpg" />
+				<div class="popup-cart--product">
+					<h5>Zack & Zoey Crowned Crossbone Dog Hoodie, Small, 12-Inch, Black</h5>
+					<strong>1 x 1 350 Ft</strong>
+				</div>
+				<span class="icon-cross"></span>
+			</li>
+			<li>
+				<img src="http://ecx.images-amazon.com/images/I/51IXlHjqqKL._AA160_.jpg" />
+				<div class="popup-cart--product">
+					<h5>Precious Cat Ultra Premium Clumping Cat Litter, 40 pound bag</h5>
+					<strong>2 x 850 Ft</strong>
+				</div>
+				<span class="icon-cross"></span>
+			</li>
+		</ul>
+		<div class="popup-cart--summary">
+			<a class="button" href="#">Kosarhoz</a>
+			<p>
+				Osszesen: <strong>3 400 Ft</strong>
+			</p>
+			
+		</div>
+
+	</div>
+</div>

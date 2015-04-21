@@ -1,0 +1,62 @@
+<!doctype html>
+<!--[if lt IE 9 ]> <html lang="en-GB" class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en-GB" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-GB" class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="initial-scale=1">
+
+		<title>{% block title %}amarqt - Állati Piactér{% endblock %}</title>
+		<!-- FYI: assest/css -->
+		{{ "screen.css" | asset_url | stylesheet_tag }}
+		{% block styles %}{% endblock %}		
+		<link rel="shortcut icon" type="image/ico" href="/favicon.png" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800' rel='stylesheet' type='text/css'>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+	</head>
+
+	<body>
+
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=239935156044597";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<!-- FYI: templates/icludes -->
+		{% block header %}
+			{% include "header" %}
+		{% endblock %}
+
+		<!-- FYI: templates/icludes -->
+		{% block navigation %}
+			{% include "navigation" %}
+		{% endblock %}
+
+		<!-- FYI: templates/ -->
+		{% block content %}{% endblock %}
+
+		<!-- FYI: templates/icludes -->
+		{% block footer %}
+			{% include "footer" %}
+		{% endblock %}
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+
+		<!-- FYI: assest/js -->
+		{{ "script.js" | asset_url | script_tag }}
+		{{ "jquery.menu-aim.js" | asset_url | script_tag }}
+		{{ "jquery.slick.js" | asset_url | script_tag }}
+		{{ "pushy.js" | asset_url | script_tag }}
+		{{ "amarqt.js" | asset_url | script_tag }}
+		{{ "classie.js" | asset_url | script_tag }}
+		{{ "modalEffects.js" | asset_url | script_tag }}
+
+	</body>
+
+</html>

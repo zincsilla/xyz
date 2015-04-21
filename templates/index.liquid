@@ -1,0 +1,29 @@
+{% block content %}
+
+	{% include "index/usp" %}
+
+	{% include "index/slider" %}
+
+
+
+	<div class="index-promo_procucts amq_product_grid gutter--top">
+
+		<section class="amq_structure_inner">
+		
+			{% include "index/procucts-dog" %}
+
+			{% include "index/procucts-cat" %}
+			
+		</section>
+	</div>
+
+	{% include "index/service-finder" %}
+
+	{% include "index/magazine" %}
+
+	{% include "index/experts" %}
+
+	{% include "index/shelter" %}
+
+{% endblock %}
+
