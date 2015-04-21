@@ -7,8 +7,12 @@
 
 ## Grid System
 
-Based on [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids), customized for client needs
-You can find the grid at assets/css/libs/_grid.scss
+Based on [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids), customized for client needs.
+You can find the grid at assets/css/libs/_grid.
+
+There are a few extra additions to the csswizardry-grids system, that's what I'd like to share here. 
+
+### Breakpoints
 
 ```css
 $breakpoints: (
@@ -21,6 +25,29 @@ $breakpoints: (
     'bigdesk' '(min-width: 1382px)'
 ) !default;
 ```
+### Showing and hiding elements for certain devices based on CSS
 
-More details coming.
+Showing and hiding certain elements don't have to be defined in css and media query, it's enough to add a class to the html element.
 
+```html
+<div class="grid__item one-whole mobile--hide">
+	this content is hidden in mobile, where max-width: 479px
+</div>
+
+<div class="grid__item one-whole phablet--hide smart--hide mobile--hide">
+	this content is hidden in handheld devices, where max-width: 767px
+</div>
+
+
+<style>
+	.my--class {
+		display: hidden;
+	}
+</style>
+<div class="grid__item my--class one-half mobile--showiblock">
+	this content is hidden, except mobile devices.
+	When we want to show a grid__item we need to use the {breakpoint}--showiblock, which equals to display: inine-block; because the grid items break with display: block; property. On any other element we can use the {breakpoint}--showblock class as well.
+
+	<p class="bigdesk--showblock">This paragraph is visible only min-width: 1382px; with display: block; property.</p>
+</div>
+```
