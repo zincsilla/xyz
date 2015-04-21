@@ -24,21 +24,6 @@ $ie-fixed-vp						: 992px;    // Viewport for IE fixed width
 ```
 
 These min and max values can be used in _.scss files to set different css values inline, not as separate media query. 
-
-```css
-$mobile-portrait-max				: 479px;	// smart phones, portrait view max width
-$mobile-landscape-min				: 480px;	// smart phones, landscape view min width
-$mobile-landscape-max				: 599px;	// smart phones, landscape view max width
-$phablet-min						: 600px;	// big phones min width
-$phablet-max						: 767px;	// big phones max width
-$tablet-min							: 768px;	// tablets min width
-$tablet-max							: 991px;	// tablets min width
-$laptop-min							: 992px;	// laptops min width
-$laptop-max							: 1381px;	// laptops max width
-$desktop							: 1382px;	// big desktop screens
-$ie-fixed-vp						: 992px;    // Viewport for IE fixed width
-```
-
 The @inline parameter accepts respond-to-min-max($min, $max) and respond-to-max($max) values. For example:
 
 ```css
@@ -118,4 +103,47 @@ Showing and hiding certain elements don't have to be defined in css and media qu
 	<p class="bigdesk--showblock">This paragraph is visible only min-width: 1382px; 
 	with display: block; property.</p>
 </div>
+```
+
+## Custom classes
+
+There are some classes defined to make the formatting easier.
+
+```html
+
+<div class="amq_structure_inner">
+	<div class="grid grid--narrow">
+		<div class="grid__item one-whole">
+			.amq_structure_inner is the main container of any content, add it to align
+			content to the middle on big screens and create some padding on the side on 
+			small screens. Use it before defining the grid.
+		</div>
+	</div>
+</div>
+
+<div class="clearfix">
+	Add .clearfix class to floated elements to be cleared
+</div>
+
+<div class="hidden">
+	Add .hidden class to hide elements
+</div>
+
+<div class="box">
+	Add .box class to have an element outlined with grey border
+</div>
+
+<div class="fullbox">
+	Add .fullbox class to have an element with grey background
+</div>
+
+<div class="gutter--top">
+	Add .gutter--top class to create some space above an element
+</div>
+
+<div class="gutter--bottom">
+	Add .gutter--bottom class to create some space below an element
+</div>
+
+
 ```
