@@ -4,6 +4,70 @@
 
 [Mixture](http://mixture.io/) with [Sassaparilla](http://sass.fffunction.co/) boilerplate, the grid optimised and modified to match the Grid System
 
+### Using media query and custom breakpoints
+
+The assets/css/libs/_settings.scss file contains the main parameters that can contains the main settings, such as break points for media queries, color definitions, heading size settings (not used in this project).
+
+
+```css
+$mobile-portrait-max				: 479px;	// smart phones, portrait view max width
+$mobile-landscape-min				: 480px;	// smart phones, landscape view min width
+$mobile-landscape-max				: 599px;	// smart phones, landscape view max width
+$phablet-min						: 600px;	// big phones min width
+$phablet-max						: 767px;	// big phones max width
+$tablet-min							: 768px;	// tablets min width
+$tablet-max							: 991px;	// tablets min width
+$laptop-min							: 992px;	// laptops min width
+$laptop-max							: 1381px;	// laptops max width
+$desktop							: 1382px;	// big desktop screens
+$ie-fixed-vp						: 992px;    // Viewport for IE fixed width
+```
+
+These min and max values can be used in _.scss files to set different css values inline, not as separate media query. 
+
+```css
+$mobile-portrait-max				: 479px;	// smart phones, portrait view max width
+$mobile-landscape-min				: 480px;	// smart phones, landscape view min width
+$mobile-landscape-max				: 599px;	// smart phones, landscape view max width
+$phablet-min						: 600px;	// big phones min width
+$phablet-max						: 767px;	// big phones max width
+$tablet-min							: 768px;	// tablets min width
+$tablet-max							: 991px;	// tablets min width
+$laptop-min							: 992px;	// laptops min width
+$laptop-max							: 1381px;	// laptops max width
+$desktop							: 1382px;	// big desktop screens
+$ie-fixed-vp						: 992px;    // Viewport for IE fixed width
+```
+
+The @inline parameter accepts respond-to-min-max($min, $max) and respond-to-max($max) values. For example:
+
+```css
+.amq_structure_inner {
+	width: 1280px;
+	margin: auto;
+	box-sizing: border-box;
+	padding: 0 10px;
+  @include respond-to-min-max($laptop-min, $laptop-max) {
+    max-width: 960px;
+    };
+  @include respond-to-min-max($tablet-min, $tablet-max) {
+    max-width: 100%;
+    padding: 0 26px;
+    };
+  @include respond-to-min-max($mobile-landscape-min, $phablet-max) {
+    max-width: 100%;
+    padding: 0 26px;
+    };
+  @include respond-to-max($mobile-portrait-max) {
+    min-width: 300px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 120%;
+    };
+}
+```
+
 
 ## Grid System
 
@@ -41,13 +105,17 @@ Showing and hiding certain elements don't have to be defined in css and media qu
 
 <style>
 	.my--class {
-		display: hidden;
+		display: none;
 	}
 </style>
 <div class="grid__item my--class one-half mobile--showiblock">
 	this content is hidden, except mobile devices.
-	When we want to show a grid__item we need to use the {breakpoint}--showiblock, which equals to display: inine-block; because the grid items break with display: block; property. On any other element we can use the {breakpoint}--showblock class as well.
+	When we want to show a grid__item we need to use the {breakpoint}--showiblock, 
+	which equals to display: inine-block; because the grid items break with d
+	isplay: block; property. On any other element we can use the 
+	{breakpoint}--showblock class as well.
 
-	<p class="bigdesk--showblock">This paragraph is visible only min-width: 1382px; with display: block; property.</p>
+	<p class="bigdesk--showblock">This paragraph is visible only min-width: 1382px; 
+	with display: block; property.</p>
 </div>
 ```

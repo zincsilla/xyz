@@ -147,22 +147,6 @@ $breakpoint-has-push:   ('mobile', 'smart', 'phablet', 'lap', 'tablet', 'desk', 
 $breakpoint-has-pull:   ('mobile', 'smart', 'phablet', 'lap', 'tablet', 'desk', 'bigdesk') !default;
 
 
-
-/**
- * Define your breakpoints. The first value is the prefix that shall be used for
- * your classes (e.g. `.palm--one-half`), the second value is the media query
- * that the breakpoint fires at.
- */
-$breakpoints: (
-    'palm' '(max-width: 480px)',
-    'smart' '(min-width: 481px) and (max-width: 599px)',
-    'phablet' '(min-width: 600px) and (max-width: 767px)',
-    'lap' '(min-width: 481px) and (max-width: 767px)',
-    'portable' '(max-width: 991px)',
-    'desk' '(min-width: 992px)'
-) !default;
-
-
 /**
  * You do not need to edit anything from this line onward; csswizardry-grids is
  * good to go. Happy griddin’!
