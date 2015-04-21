@@ -1,13 +1,13 @@
-# amarqt.com
+# XYZ documentation
 
 ## Sass Processor to use
 
-[Mixture][http://mixture.io/] with [Sassaparilla][http://sass.fffunction.co/] boilerplate, the grid optimised and modified to match the Grid System
+[Mixture](http://mixture.io/) with [Sassaparilla](http://sass.fffunction.co/) boilerplate, the grid optimised and modified to match the Grid System
 
 
 ## Grid System
 
-Based on [csswizardry-grids][https://github.com/csswizardry/csswizardry-grids], customized for client needs
+Based on [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids), customized for client needs
 You can find the grid at assets/css/libs/_grid.scss
 
 ```css
